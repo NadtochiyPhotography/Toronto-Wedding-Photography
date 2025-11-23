@@ -39,7 +39,7 @@ Couples trust us for our calm presence, professionalism, and ability to blend in
 
 We proudly serve Toronto, Vaughan, Caledon, Oakville, and Niagara, and we’re always ready to travel anywhere your story takes us.  
 
-[![Toronto Wedding Documentary Photography](https://nadtochiy.com/wp-content/uploads/2025/11/Wedding-900px-1006.jpg)](https://nadtochiy.com)
+[![Toronto Wedding Documentary Photography](https://nadtochiy.com/wp-content/uploads/2025/11/Wedding-900px-1005.jpg)](https://nadtochiy.com)
 
 ---
 
