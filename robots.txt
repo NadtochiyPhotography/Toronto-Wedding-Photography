@@ -2,4 +2,3 @@ User-agent: *
 Allow: /
 
 Sitemap: https://nadtochiyphotography.github.io/Toronto-Wedding-Photography/sitemap.xml
-Host: https://nadtochiy.com
