@@ -1,0 +1,1818 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Nadtochiy Photography — Toronto Wedding Photographer & Videographer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Nadtochiy Photography — documentary, editorial, emotional, fine art, timeless & cinematic wedding photography and videography based in Toronto, Ontario. Over 17 years of experience and more than 1,000 weddings captured worldwide.">
+  <link rel="canonical" href="https://nadtochiy.com/">
+  <link rel="icon" href="https://nadtochiy.com/wp-content/uploads/2025/11/favicon.png" type="image/png">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Nadtochiy Photography — Toronto Wedding Photographer & Videographer">
+  <meta property="og:description" content="Documentary & fine art wedding photography and videography in Toronto, across Ontario, and worldwide for destination weddings.">
+  <meta property="og:url" content="https://nadtochiyphotography.github.io/Toronto-Wedding-Photography/">
+  <meta property="og:image" content="https://nadtochiy.com/wp-content/uploads/2025/11/header1.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <style>
+    :root {
+      --bg: #050505;
+      --bg-alt: #111111;
+      --bg-soft: #181818;
+      --accent: #f3d29b;
+      --accent-soft: rgba(243, 210, 155, 0.12);
+      --text-main: #f5f5f5;
+      --text-muted: #b9b9b9;
+      --border-subtle: #2a2a2a;
+      --chip-bg: #1e1e1e;
+      --chip-border: #333333;
+      --radius-xl: 18px;
+      --radius-xxl: 28px;
+      --shadow-soft: 0 18px 45px rgba(0, 0, 0, 0.6);
+      --max-width: 1120px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background-color: var(--bg);
+      color: var(--text-main);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      backdrop-filter: blur(18px);
+      background: linear-gradient(to bottom, rgba(5, 5, 5, 0.92), rgba(5, 5, 5, 0.75), transparent);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.02);
+    }
+
+    .nav-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 14px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand-logo {
+      width: 40px;
+      height: 40px;
+      border-radius: 999px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      background: #000;
+    }
+
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .brand-name {
+      font-size: 0.92rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    .brand-tagline {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: flex-end;
+    }
+
+    .nav-links a {
+      font-size: 0.78rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      padding: 7px 11px;
+      border-radius: 999px;
+      border: 1px solid var(--chip-border);
+      background: rgba(12, 12, 12, 0.85);
+      color: var(--text-muted);
+      text-decoration: none;
+    }
+
+    .nav-links a:hover {
+      border-color: var(--accent);
+      color: #fff;
+      background: rgba(243, 210, 155, 0.08);
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 32px 18px 68px;
+    }
+
+    .hero-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      position: relative;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: minmax(0, 3fr) minmax(0, 2.5fr);
+      gap: 32px;
+      align-items: center;
+    }
+
+    .hero-badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+
+    .pill {
+      padding: 6px 11px;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      font-size: 0.72rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      background: rgba(0, 0, 0, 0.75);
+    }
+
+    .pill--accent {
+      border-color: rgba(243, 210, 155, 0.8);
+      background: var(--accent-soft);
+      color: var(--accent);
+    }
+
+    .hero-kicker {
+      font-size: 0.82rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      color: var(--text-muted);
+    }
+
+    .hero-title {
+      font-size: clamp(2.2rem, 5vw, 3.2rem);
+      line-height: 1.1;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      margin: 0 0 14px;
+    }
+
+    .hero-title span {
+      display: block;
+    }
+
+    .hero-subtitle {
+      font-size: 0.98rem;
+      line-height: 1.7;
+      color: var(--text-muted);
+      max-width: 34rem;
+      margin-bottom: 22px;
+    }
+
+    .hero-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 22px;
+    }
+
+    .hero-tags span {
+      font-size: 0.74rem;
+      padding: 5px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      background: rgba(8, 8, 8, 0.8);
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
+      padding: 11px 20px;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      font-size: 0.86rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #181818;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .btn-primary:hover {
+      background: #ffe0aa;
+    }
+
+    .btn-outline {
+      background: rgba(5, 5, 5, 0.85);
+      border-color: var(--chip-border);
+      color: var(--text-main);
+    }
+
+    .btn-outline:hover {
+      border-color: var(--accent);
+      background: rgba(243, 210, 155, 0.08);
+    }
+
+    .hero-note {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .hero-media-card {
+      border-radius: var(--radius-xxl);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      background: linear-gradient(145deg, rgba(15, 15, 15, 0.94), rgba(5, 5, 5, 0.96));
+      overflow: hidden;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .hero-media-image {
+      position: relative;
+      overflow: hidden;
+      max-height: 320px;
+    }
+
+    .hero-media-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: saturate(1.2) contrast(1.05);
+      transform: scale(1.02);
+    }
+
+    .hero-media-footer {
+      padding: 18px 18px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .hero-media-caption {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }
+
+    .hero-media-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .hero-meta-chip {
+      font-size: 0.75rem;
+      padding: 6px 9px;
+      border-radius: 999px;
+      border: 1px solid var(--chip-border);
+      background: var(--chip-bg);
+      color: var(--text-muted);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .hero-meta-dot {
+      width: 5px;
+      height: 5px;
+      border-radius: 999px;
+      background: var(--accent);
+    }
+
+    main {
+      padding: 0 18px 64px;
+    }
+
+    .section {
+      max-width: var(--max-width);
+      margin: 0 auto 42px;
+      border-radius: var(--radius-xxl);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      background: radial-gradient(circle at top left, rgba(243, 210, 155, 0.05), transparent 55%), radial-gradient(circle at bottom right, rgba(89, 108, 214, 0.08), transparent 55%), #070707;
+      padding: 26px 20px 24px;
+      box-shadow: 0 18px 42px rgba(0, 0, 0, 0.6);
+    }
+
+    .section-header {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: baseline;
+      margin-bottom: 18px;
+    }
+
+    .section-kicker {
+      font-size: 0.76rem;
+      letter-spacing: 0.26em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 2px;
+    }
+
+    .section-title {
+      font-size: 1.6rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin: 0;
+    }
+
+    .section-subtitle {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      max-width: 26rem;
+    }
+
+    .section-body {
+      font-size: 0.94rem;
+      color: var(--text-muted);
+      line-height: 1.8;
+    }
+
+    .section-body p {
+      margin: 0 0 12px;
+    }
+
+    .columns-2 {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+      gap: 26px;
+    }
+
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      margin: 10px 0 4px;
+    }
+
+    .pill-row span {
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      padding: 4px 9px;
+      font-size: 0.74rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--text-muted);
+    }
+
+    .subcard {
+      border-radius: var(--radius-xl);
+      border: 1px solid var(--border-subtle);
+      background: rgba(10, 10, 10, 0.9);
+      padding: 16px 15px 14px;
+      font-size: 0.88rem;
+      color: var(--text-muted);
+    }
+
+    .subcard-title {
+      font-size: 0.86rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+      color: #e9e9e9;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .gallery-column {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .gallery-item {
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      background: #000;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .gallery-label {
+      font-size: 0.78rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      color: var(--text-muted);
+    }
+
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .video-card {
+      position: relative;
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      background: #000;
+    }
+
+    .video-card iframe {
+      width: 100%;
+      height: 210px;
+      border: 0;
+      display: block;
+    }
+
+    .video-caption {
+      padding: 9px 10px 10px;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .packages-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .package-card {
+      border-radius: var(--radius-xl);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      background: linear-gradient(145deg, #121212, #050505);
+      padding: 16px 15px 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .package-tag {
+      font-size: 0.72rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+
+    .package-name {
+      font-size: 0.98rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .package-price {
+      font-size: 0.94rem;
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .package-meta {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-bottom: 4px;
+    }
+
+    .package-list {
+      margin: 0;
+      padding-left: 16px;
+      font-size: 0.86rem;
+      color: var(--text-muted);
+    }
+
+    .package-list li {
+      margin-bottom: 4px;
+    }
+
+    .note-list {
+      margin: 10px 0 0;
+      padding-left: 16px;
+      font-size: 0.84rem;
+      color: var(--text-muted);
+    }
+
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .review-card {
+      border-radius: var(--radius-xl);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      background: rgba(9, 9, 9, 0.98);
+      padding: 14px 15px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .review-stars {
+      font-size: 0.86rem;
+      color: var(--accent);
+    }
+
+    .review-body {
+      font-size: 0.86rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+
+    .review-author {
+      font-size: 0.8rem;
+      color: #eaeaea;
+    }
+
+    .review-source {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+    }
+
+    .faq-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+      gap: 18px;
+    }
+
+    .faq-item {
+      border-radius: var(--radius-xl);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      background: rgba(10, 10, 10, 0.96);
+      padding: 12px 13px 11px;
+      margin-bottom: 8px;
+    }
+
+    .faq-q {
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    .faq-a {
+      font-size: 0.86rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.1fr);
+      gap: 18px;
+    }
+
+    .contact-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      font-size: 0.88rem;
+      color: var(--text-muted);
+    }
+
+    .contact-list li {
+      margin-bottom: 6px;
+    }
+
+    .social-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 8px;
+    }
+
+    .social-pill {
+      font-size: 0.78rem;
+      padding: 6px 10px;
+      border-radius: 999px;
+      border: 1px solid var(--chip-border);
+      background: var(--chip-bg);
+      color: var(--text-muted);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .footer-note {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 20px 36px;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      text-align: center;
+    }
+
+    @media (max-width: 900px) {
+      .hero-inner {
+        grid-template-columns: minmax(0, 1fr);
+      }
+      .hero-media-card {
+        order: -1;
+      }
+      .gallery-grid,
+      .video-grid,
+      .packages-grid,
+      .reviews-grid,
+      .faq-grid,
+      .contact-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+
+    @media (max-width: 640px) {
+      .nav-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .hero {
+        padding-top: 22px;
+      }
+      .section {
+        padding: 20px 16px 18px;
+      }
+      .section-title {
+        font-size: 1.4rem;
+      }
+      .hero-title {
+        font-size: 1.9rem;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": ["Organization", "LocalBusiness"],
+        "@id": "https://nadtochiy.com/#nadtochiy-photography",
+        "name": "Nadtochiy Photography",
+        "description": "Nadtochiy Photography is a Toronto-based wedding photography and videography studio led by Oleksandra and Volodymyr Nadtochii. They specialize in documentary, editorial, emotional, fine art, timeless and cinematic storytelling for weddings, engagements and family sessions across Ontario and worldwide.",
+        "url": "https://nadtochiy.com/",
+        "image": "https://nadtochiy.com/wp-content/uploads/2025/11/LOGO.png",
+        "logo": "https://nadtochiy.com/wp-content/uploads/2025/11/LOGO.png",
+        "telephone": "+14376035843",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "4978 Yonge Street",
+          "addressLocality": "Toronto",
+          "addressRegion": "Ontario",
+          "postalCode": "M2N7G8",
+          "addressCountry": "CA"
+        },
+        "areaServed": [
+          "Toronto",
+          "GTA",
+          "Mississauga",
+          "Oakville",
+          "Niagara",
+          "Muskoka",
+          "Ontario",
+          "Canada",
+          "Italy",
+          "USA",
+          "Montenegro",
+          "Croatia",
+          "Mexico",
+          "France",
+          "Portugal",
+          "Spain"
+        ],
+        "sameAs": [
+          "https://www.instagram.com/nadtochiy_photography",
+          "https://www.youtube.com/@nadtochiy",
+          "https://www.tiktok.com/@toronto_wedding",
+          "https://ca.pinterest.com/nadtochiy/",
+          "https://x.com/nadtochiy_photo",
+          "https://www.facebook.com/NadtochiyTorontoWeddingPhotography",
+          "https://share.google/JAKSUeJZe32rdwdjS",
+          "https://www.yelp.ca/biz/nadtochiy-toronto",
+          "https://www.threads.com/@nadtochiy_photography",
+          "https://www.reddit.com/user/torontoweddingphoto/"
+        ],
+        "foundingDate": "2008",
+        "founders": [
+          {
+            "@type": "Person",
+            "name": "Oleksandra Nadtocha",
+            "jobTitle": "Lead Photographer"
+          },
+          {
+            "@type": "Person",
+            "name": "Volodymyr Nadtochii",
+            "jobTitle": "Lead Videographer"
+          }
+        ],
+        "priceRange": "$$$-$$$$",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+              "Saturday",
+              "Sunday"
+            ],
+            "opens": "00:00",
+            "closes": "23:59"
+          }
+        ],
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "contactType": "customer service",
+            "email": "info@nadtochiy.com",
+            "telephone": "+14376035843",
+            "areaServed": [
+              "CA"
+            ],
+            "availableLanguage": [
+              "English",
+              "Ukrainian",
+              "Russian",
+              "Serbian",
+              "French",
+              "Croatian"
+            ]
+          }
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://nadtochiyphotography.github.io/Toronto-Wedding-Photography/#website",
+        "url": "https://nadtochiyphotography.github.io/Toronto-Wedding-Photography/",
+        "name": "Nadtochiy Photography — Toronto Wedding Photographer & Videographer",
+        "description": "Documentary, fine art and cinematic wedding photography and videography based in Toronto, Ontario, serving all of Canada and destination weddings worldwide.",
+        "publisher": {
+          "@id": "https://nadtochiy.com/#nadtochiy-photography"
+        }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://nadtochiyphotography.github.io/Toronto-Wedding-Photography/#webpage",
+        "url": "https://nadtochiyphotography.github.io/Toronto-Wedding-Photography/",
+        "name": "Nadtochiy Photography — Toronto Wedding Photographer",
+        "isPartOf": {
+          "@id": "https://nadtochiyphotography.github.io/Toronto-Wedding-Photography/#website"
+        },
+        "about": {
+          "@id": "https://nadtochiy.com/#nadtochiy-photography"
+        },
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://nadtochiy.com/wp-content/uploads/2025/11/header1.jpg",
+          "width": 1500,
+          "height": 844
+        }
+      },
+      {
+        "@type": "Service",
+        "@id": "https://nadtochiy.com/#wedding-photography",
+        "name": "Wedding Photography",
+        "description": "Documentary and fine art wedding photography coverage in Toronto, across Ontario and worldwide, capturing the full story of the day with a balance of candid and lightly posed portraits.",
+        "provider": {
+          "@id": "https://nadtochiy.com/#nadtochiy-photography"
+        },
+        "areaServed": [
+          "Toronto",
+          "Ontario",
+          "Canada",
+          "Destination"
+        ],
+        "serviceType": "Wedding photography"
+      },
+      {
+        "@type": "Service",
+        "@id": "https://nadtochiy.com/#wedding-videography",
+        "name": "Wedding Videography",
+        "description": "Cinematic, emotional and unobtrusive wedding videography with highlight films and full-day coverage that preserves the atmosphere, energy and feeling of your celebration.",
+        "provider": {
+          "@id": "https://nadtochiy.com/#nadtochiy-photography"
+        },
+        "areaServed": [
+          "Toronto",
+          "Ontario",
+          "Canada",
+          "Destination"
+        ],
+        "serviceType": "Wedding videography"
+      },
+      {
+        "@type": "Service",
+        "@id": "https://nadtochiy.com/#engagement-session",
+        "name": "Engagement Session",
+        "description": "Natural, romantic engagement photography in Toronto and surrounding areas, focused on real connection and beautiful light.",
+        "provider": {
+          "@id": "https://nadtochiy.com/#nadtochiy-photography"
+        },
+        "areaServed": [
+          "Toronto",
+          "Ontario",
+          "Canada"
+        ],
+        "serviceType": "Engagement photography"
+      },
+      {
+        "@type": "Service",
+        "@id": "https://nadtochiy.com/#family-photography",
+        "name": "Family Photography",
+        "description": "Heartfelt family photography with a documentary touch, capturing real moments, emotion and connection between family members.",
+        "provider": {
+          "@id": "https://nadtochiy.com/#nadtochiy-photography"
+        },
+        "areaServed": [
+          "Toronto",
+          "Ontario",
+          "Canada"
+        ],
+        "serviceType": "Family photography"
+      },
+      {
+        "@type": "Service",
+        "@id": "https://nadtochiy.com/#elopement",
+        "name": "Elopement Photography & Videography",
+        "description": "Intimate elopement photography and videography for couples celebrating with a small group or just the two of them in Toronto, Ontario or abroad.",
+        "provider": {
+          "@id": "https://nadtochiy.com/#nadtochiy-photography"
+        },
+        "areaServed": [
+          "Ontario",
+          "Canada",
+          "Destination"
+        ],
+        "serviceType": "Elopement photography and videography"
+      },
+      {
+        "@type": "Service",
+        "@id": "https://nadtochiy.com/#destination-wedding",
+        "name": "Destination Wedding Photography & Videography",
+        "description": "Destination wedding coverage for couples celebrating in Europe, North America and beyond, with extensive experience in coastal and historic venues.",
+        "provider": {
+          "@id": "https://nadtochiy.com/#nadtochiy-photography"
+        },
+        "areaServed": [
+          "Italy",
+          "France",
+          "Croatia",
+          "Montenegro",
+          "Mexico",
+          "Portugal",
+          "Spain",
+          "Worldwide"
+        ],
+        "serviceType": "Destination wedding photography and videography"
+      },
+      {
+        "@type": "OfferCatalog",
+        "@id": "https://nadtochiy.com/#wedding-collections",
+        "name": "Wedding Photography & Videography Collections",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "name": "Wedding Photography — 6 hours",
+            "price": "3999",
+            "priceCurrency": "CAD",
+            "itemOffered": {
+              "@id": "https://nadtochiy.com/#wedding-photography"
+            }
+          },
+          {
+            "@type": "Offer",
+            "name": "Wedding Photography — 8 hours",
+            "price": "4499",
+            "priceCurrency": "CAD",
+            "itemOffered": {
+              "@id": "https://nadtochiy.com/#wedding-photography"
+            }
+          },
+          {
+            "@type": "Offer",
+            "name": "Wedding Photography — 10 hours",
+            "price": "4999",
+            "priceCurrency": "CAD",
+            "itemOffered": {
+              "@id": "https://nadtochiy.com/#wedding-photography"
+            }
+          },
+          {
+            "@type": "Offer",
+            "name": "Wedding Videography — 6 hours",
+            "price": "4499",
+            "priceCurrency": "CAD",
+            "itemOffered": {
+              "@id": "https://nadtochiy.com/#wedding-videography"
+            }
+          },
+          {
+            "@type": "Offer",
+            "name": "Wedding Videography — 8 hours",
+            "price": "5499",
+            "priceCurrency": "CAD",
+            "itemOffered": {
+              "@id": "https://nadtochiy.com/#wedding-videography"
+            }
+          },
+          {
+            "@type": "Offer",
+            "name": "Wedding Videography — 10 hours",
+            "price": "6499",
+            "priceCurrency": "CAD",
+            "itemOffered": {
+              "@id": "https://nadtochiy.com/#wedding-videography"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://nadtochiy.com/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How many photos do we receive?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We do not limit the number of photographs. We edit everything we shoot, and for a full wedding day you usually receive around 700–1,000 fully edited images."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does it take to receive our wedding photos?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Our turnaround time for wedding galleries is typically 3–4 months. We carefully edit every image and craft a complete story of your day."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you travel outside Toronto and Ontario?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, we regularly travel across all of Ontario and worldwide for destination weddings. Travel fees depend on the location and schedule."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do we book our date?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Send us an inquiry through our website form or contact us directly, and we will schedule a call, video meeting or in-person consultation to discuss your wedding and secure your date."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What deposit do you require?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "To reserve your date we usually require a 30% retainer, with the remaining balance due closer to the wedding day."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What happens if it rains on our wedding day?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We are experienced in working in all kinds of weather and can create beautiful images regardless of conditions. For portrait sessions we can sometimes reschedule if nearby dates are free."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you shoot on film?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, we love incorporating film photography for its timeless look and texture. Film can be added to most collections on request."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you deliver RAW files?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No, we do not deliver RAW files. We believe in providing a complete, fully edited final gallery that represents our artistic vision and your story."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "Review",
+        "@id": "https://nadtochiy.com/#review-rc",
+        "itemReviewed": {
+          "@id": "https://nadtochiy.com/#nadtochiy-photography"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "RC"
+        },
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": 5,
+          "bestRating": 5
+        },
+        "reviewBody": "Alexandra will be my photographer for every milestone in my life from now on. Her style is clean, elegant and timeless, and she made me feel beautiful and at ease during a very vulnerable moment after giving birth.",
+        "url": "https://share.google/JAKSUeJZe32rdwdjS"
+      },
+      {
+        "@type": "Review",
+        "@id": "https://nadtochiy.com/#review-andrea-wolff",
+        "itemReviewed": {
+          "@id": "https://nadtochiy.com/#nadtochiy-photography"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Andrea Wolff"
+        },
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": 5,
+          "bestRating": 5
+        },
+        "reviewBody": "Hiring Alexandra for our wedding was the best decision we made. She was professional, calm and incredibly kind, and the final photographs exceeded all expectations.",
+        "url": "https://share.google/JAKSUeJZe32rdwdjS"
+      },
+      {
+        "@type": "Review",
+        "@id": "https://nadtochiy.com/#review-miranda-anthistle",
+        "itemReviewed": {
+          "@id": "https://nadtochiy.com/#nadtochiy-photography"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Miranda Anthistle"
+        },
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": 5,
+          "bestRating": 5
+        },
+        "reviewBody": "Alexandra is phenomenal. Our engagement photos are our favourite ones ever taken. She has an incredible eye, captured all the special moments perfectly and made us feel completely comfortable.",
+        "url": "https://share.google/JAKSUeJZe32rdwdjS"
+      },
+      {
+        "@type": "Review",
+        "@id": "https://nadtochiy.com/#review-ben-agyei",
+        "itemReviewed": {
+          "@id": "https://nadtochiy.com/#nadtochiy-photography"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Ben Agyei"
+        },
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": 5,
+          "bestRating": 5
+        },
+        "reviewBody": "We got married in Montenegro and hired Alexandra to be our photographer. From start to finish she was professional, friendly and incredibly talented, capturing both the big moments and emotional candid ones.",
+        "url": "https://share.google/JAKSUeJZe32rdwdjS"
+      },
+      {
+        "@type": "Review",
+        "@id": "https://nadtochiy.com/#review-evgen-kudriashov",
+        "itemReviewed": {
+          "@id": "https://nadtochiy.com/#nadtochiy-photography"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Evgen Kudriashov"
+        },
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": 5,
+          "bestRating": 5
+        },
+        "reviewBody": "Vladimir photographed our wedding in Montenegro and exceeded every expectation. He was proactive, inspired us during the shoot and created stunning images and drone footage.",
+        "url": "https://share.google/JAKSUeJZe32rdwdjS"
+      },
+      {
+        "@type": "Review",
+        "@id": "https://nadtochiy.com/#review-katya-istratova",
+        "itemReviewed": {
+          "@id": "https://nadtochiy.com/#nadtochiy-photography"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Katya Istratova"
+        },
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": 5,
+          "bestRating": 5
+        },
+        "reviewBody": "Alexandra and Vladimir are the best photographers we have ever met. They were invisible during the wedding day yet captured every important moment, delivering film and photos far beyond what we imagined.",
+        "url": "https://share.google/JAKSUeJZe32rdwdjS"
+      },
+      {
+        "@type": "Review",
+        "@id": "https://nadtochiy.com/#review-emily-chen",
+        "itemReviewed": {
+          "@id": "https://nadtochiy.com/#nadtochiy-photography"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Emily Chen"
+        },
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": 5,
+          "bestRating": 5
+        },
+        "reviewBody": "Alexandra and Vladimir are the best wedding photographers in the world. They captured genuine, candid and absolutely gorgeous moments, listened to our vision and made it even better.",
+        "url": "https://share.google/JAKSUeJZe32rdwdjS"
+      },
+      {
+        "@type": "Review",
+        "@id": "https://nadtochiy.com/#review-patricia-singson",
+        "itemReviewed": {
+          "@id": "https://nadtochiy.com/#nadtochiy-photography"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Patricia Singson"
+        },
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": 5,
+          "bestRating": 5
+        },
+        "reviewBody": "We had an amazing experience with Alexandra during our engagement shoot. She is professional, knows the best spots in Toronto and made us feel comfortable from the very beginning.",
+        "url": "https://share.google/JAKSUeJZe32rdwdjS"
+      },
+      {
+        "@type": "BlogPosting",
+        "@id": "https://nadtochiy.com/lauren-and-tim",
+        "url": "https://nadtochiy.com/lauren-and-tim",
+        "headline": "Effortless Elegance in the Hills of Italy — Lauren & Tim’s Destination Wedding",
+        "description": "Lauren and Tim’s intimate wedding at Villa Rizzardi in Verona blended effortless elegance, beautiful landscapes and a warm, emotional atmosphere.",
+        "author": {
+          "@id": "https://nadtochiy.com/#nadtochiy-photography"
+        },
+        "mainEntityOfPage": "https://nadtochiy.com/lauren-and-tim"
+      },
+      {
+        "@type": "BlogPosting",
+        "@id": "https://nadtochiy.com/stacey-and-benjamin",
+        "url": "https://nadtochiy.com/stacey-and-benjamin",
+        "headline": "Seaside Candlelit Wedding Celebration — Stacey & Benjamin",
+        "description": "Stacey and Benjamin’s seaside wedding featured a candlelit long table, a romantic oceanfront setting and an atmosphere full of warmth and emotion.",
+        "author": {
+          "@id": "https://nadtochiy.com/#nadtochiy-photography"
+        },
+        "mainEntityOfPage": "https://nadtochiy.com/stacey-and-benjamin"
+      },
+      {
+        "@type": "BlogPosting",
+        "@id": "https://nadtochiy.com/doyinsola-and-michael",
+        "url": "https://nadtochiy.com/doyinsola-and-michael",
+        "headline": "Whimsical Modern Luxury Wedding in Montenegro — Doyinsola & Michael",
+        "description": "Doyinsola and Michael’s wedding at Porto Montenegro combined whimsical design, modern luxury and vibrant cultural elements in a breathtaking coastal setting.",
+        "author": {
+          "@id": "https://nadtochiy.com/#nadtochiy-photography"
+        },
+        "mainEntityOfPage": "https://nadtochiy.com/doyinsola-and-michael"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="nav-inner">
+      <div class="brand">
+        <div class="brand-logo">
+          <img src="https://nadtochiy.com/wp-content/uploads/2025/11/LOGO.png" alt="Nadtochiy Photography logo">
+        </div>
+        <div class="brand-text">
+          <div class="brand-name">Nadtochiy Photography</div>
+          <div class="brand-tagline">Toronto Wedding Photographer &amp; Videographer</div>
+        </div>
+      </div>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#galleries">Photography</a>
+        <a href="#video">Videography</a>
+        <a href="#services">Investment</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Inquire</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <div>
+        <div class="hero-badge-row">
+          <div class="pill pill--accent">Toronto · Ontario · Worldwide</div>
+          <div class="pill">Wedding Photography &amp; Videography</div>
+        </div>
+        <div class="hero-kicker">Documentary &amp; Fine Art</div>
+        <h1 class="hero-title">
+          <span>Wedding</span>
+          <span>Storytelling</span>
+        </h1>
+        <p class="hero-subtitle">
+          We are Oleksandra &amp; Volodymyr Nadtochii, a photography and videography duo with over 17 years of experience and more than 1,000 weddings captured across Europe, Canada and beyond. Our work is documentary, editorial, emotional, fine art, timeless and cinematic — a complete story of your day from the first quiet moment to the last song.
+        </p>
+        <div class="hero-tags">
+          <span>Documentary</span>
+          <span>Editorial</span>
+          <span>Emotional</span>
+          <span>Fine Art</span>
+          <span>Timeless</span>
+          <span>Cinematic</span>
+        </div>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="https://nadtochiy.com/inquire" target="_blank" rel="noopener">Inquire for your date</a>
+          <a class="btn btn-outline" href="https://nadtochiy.com/wedding-galleries" target="_blank" rel="noopener">View wedding galleries</a>
+        </div>
+        <div class="hero-note">
+          Based in Toronto, Ontario — available across the GTA, all of Ontario and worldwide for destination weddings.
+        </div>
+      </div>
+
+      <aside class="hero-media-card" aria-label="Featured wedding image">
+        <div class="hero-media-image">
+          <img src="https://nadtochiy.com/wp-content/uploads/2025/11/header1.jpg" alt="Cinematic wedding landscape by Nadtochiy Photography">
+        </div>
+        <div class="hero-media-footer">
+          <div class="hero-media-caption">
+            One wedding day, hundreds of quiet and loud moments — we photograph them all to create a single, cohesive story rather than repeated shots.
+          </div>
+          <div class="hero-media-meta">
+            <div class="hero-meta-chip">
+              <span class="hero-meta-dot"></span>
+              17+ years in weddings
+            </div>
+            <div class="hero-meta-chip">
+              <span class="hero-meta-dot"></span>
+              1,000+ weddings worldwide
+            </div>
+            <div class="hero-meta-chip">
+              <span class="hero-meta-dot"></span>
+              Photo &amp; video duo
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <main>
+    <section id="about" class="section">
+      <div class="section-header">
+        <div>
+          <div class="section-kicker">About Us</div>
+          <h2 class="section-title">A Small Family Studio with a Global Story</h2>
+        </div>
+        <div class="section-subtitle">
+          Nadtochiy Photography is our small family business, created and run by two people who have dedicated their lives to telling wedding stories with honesty, beauty and care.
+        </div>
+      </div>
+      <div class="columns-2">
+        <div class="section-body">
+          <p>
+            We started our career in 2008 in Zaporizhzhia, Ukraine, quickly becoming one of the most sought-after teams in our city. In 2014 we moved to Montenegro, where we spent almost a decade photographing destination weddings for couples from the UK, Canada, the USA, Australia and many other countries — often travelling to Croatia, Italy and France.
+          </p>
+          <p>
+            In 2024 we made Toronto our new home. Today we photograph and film weddings across the GTA, all of Ontario and beyond, bringing our destination-wedding experience to every celebration — whether it is an intimate elopement in the city or a large celebration in Niagara or Muskoka.
+          </p>
+          <p>
+            Our style is documentary, editorial, emotional, fine art, timeless and cinematic. We stay unobtrusive and observant, letting the day unfold naturally while making sure every important moment, guest and detail is carefully documented. At the same time, we know how to guide you through portraits and group photos in a gentle, flattering way.
+          </p>
+          <p>
+            The result is one complete story of your wedding day — diverse, rich in emotion and atmosphere, with images you will want to print, frame and revisit for years.
+          </p>
+          <div class="pill-row">
+            <span>Toronto</span>
+            <span>GTA</span>
+            <span>Niagara</span>
+            <span>Muskoka</span>
+            <span>Destination</span>
+          </div>
+        </div>
+        <div>
+          <div class="subcard">
+            <div class="subcard-title">Who we are</div>
+            <p>
+              <strong>Oleksandra Nadtocha</strong> — lead photographer and co‑founder. She blends documentary observation with fine art composition and timeless colour, creating galleries that feel elegant and honest at the same time.
+            </p>
+            <p>
+              <strong>Volodymyr Nadtochii</strong> — lead videographer and co‑founder. His films are cinematic yet unobtrusive: he works almost silently, observing from the side and capturing the atmosphere as it truly feels.
+            </p>
+            <p>
+              On photo‑only weddings Vladimir can be a second photographer; on video‑only weddings Oleksandra becomes a second videographer. We work as one team, matching our style and vision so that photo and video feel like they belong together.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="galleries" class="section">
+      <div class="section-header">
+        <div>
+          <div class="section-kicker">Photography</div>
+          <h2 class="section-title">Wedding, Engagement &amp; Family Stories</h2>
+        </div>
+        <div class="section-subtitle">
+          A glimpse into the way we see light, landscapes, architecture and emotion — always with people at the centre of every frame.
+        </div>
+      </div>
+
+      <div class="section-body" style="margin-bottom:18px;">
+        <p>
+          Every gallery we deliver is designed as a complete narrative: from quiet getting-ready moments and details, through the ceremony and portraits, to the loudest dances at the end of the night. We move constantly, changing angles and focal lengths so that your final collection feels rich and varied, not like the same frame repeated again and again.
+        </p>
+      </div>
+
+      <div class="gallery-label">Wedding</div>
+      <div class="gallery-grid" aria-label="Wedding photography preview">
+        <div class="gallery-column">
+          <div class="gallery-item">
+            <img src="https://nadtochiy.com/wp-content/uploads/2025/11/Wedding-900px-1000.jpg" alt="Bride and groom walking together on wedding day near Toronto">
+          </div>
+          <div class="gallery-item">
+            <img src="https://nadtochiy.com/wp-content/uploads/2025/11/Wedding-900px-1001.jpg" alt="Emotional wedding ceremony captured by Toronto wedding photographer">
+          </div>
+        </div>
+        <div class="gallery-column">
+          <div class="gallery-item">
+            <img src="https://nadtochiy.com/wp-content/uploads/2025/11/Wedding-900px-1002.jpg" alt="Fine art wedding portrait photography near Toronto">
+          </div>
+          <div class="gallery-item">
+            <img src="https://nadtochiy.com/wp-content/uploads/2025/11/Wedding-900px-1003.jpg" alt="Documentary wedding reception moment in Ontario">
+          </div>
+        </div>
+        <div class="gallery-column">
+          <div class="gallery-item">
+            <img src="https://nadtochiy.com/wp-content/uploads/2025/11/Wedding-900px-1004.jpg" alt="Bride and groom during golden hour portraits in Ontario">
+          </div>
+          <div class="gallery-item">
+            <img src="https://nadtochiy.com/wp-content/uploads/2025/11/Wedding-900px-1005.jpg" alt="Cinematic wedding party moment captured in Toronto">
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-label" style="margin-top:22px;">Engagement</div>
+      <div class="gallery-grid" aria-label="Engagement photography preview">
+        <div class="gallery-column">
+          <div class="gallery-item">
+            <img src="https://nadtochiy.com/wp-content/uploads/2025/11/Engagement-900px-1011.jpg" alt="Engagement photo session in Toronto at sunset">
+          </div>
+          <div class="gallery-item">
+            <img src="https://nadtochiy.com/wp-content/uploads/2025/11/Engagement-900px-1009.jpg" alt="Couple walking and laughing during engagement session">
+          </div>
+        </div>
+        <div class="gallery-column">
+          <div class="gallery-item">
+            <img src="https://nadtochiy.com/wp-content/uploads/2025/11/Engagement-900px-1008.jpg" alt="Romantic engagement portrait in Ontario park">
+          </div>
+          <div class="gallery-item">
+            <img src="https://nadtochiy.com/wp-content/uploads/2025/11/Engagement-900px-1004.jpg" alt="Fine art inspired engagement photography in Toronto">
+          </div>
+        </div>
+        <div class="gallery-column">
+          <div class="gallery-item">
+            <img src="https://nadtochiy.com/wp-content/uploads/2025/11/Engagement-900px-1000.jpg" alt="Engaged couple embracing during sunset in Toronto">
+          </div>
+          <div class="gallery-item">
+            <img src="https://nadtochiy.com/wp-content/uploads/2025/11/Engagement-900px-1002.jpg" alt="Editorial-style engagement photo session in Ontario">
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-label" style="margin-top:22px;">Family</div>
+      <div class="gallery-grid" aria-label="Family photography preview">
+        <div class="gallery-column">
+          <div class="gallery-item">
+            <img src="https://nadtochiy.com/wp-content/uploads/2025/11/Family-900px-1004.jpg" alt="Family photography session outdoors near Toronto">
+          </div>
+          <div class="gallery-item">
+            <img src="https://nadtochiy.com/wp-content/uploads/2025/11/Family-900px-1003.jpg" alt="Parents holding their child during family photo session">
+          </div>
+        </div>
+        <div class="gallery-column">
+          <div class="gallery-item">
+            <img src="https://nadtochiy.com/wp-content/uploads/2025/11/Family-900px-1002.jpg" alt="Candid family moment captured by Toronto photographer">
+          </div>
+          <div class="gallery-item">
+            <img src="https://nadtochiy.com/wp-content/uploads/2025/11/Family-900px-1001.jpg" alt="Lifestyle family photography at home">
+          </div>
+        </div>
+        <div class="gallery-column">
+          <div class="gallery-item">
+            <img src="https://nadtochiy.com/wp-content/uploads/2025/11/Family-900px-1000.jpg" alt="Parents and kids smiling during family session in Ontario">
+          </div>
+          <div class="gallery-item">
+            <img src="https://nadtochiy.com/wp-content/uploads/2025/11/Family-900px-1005.jpg" alt="Fine art inspired family portrait near Toronto">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="video" class="section">
+      <div class="section-header">
+        <div>
+          <div class="section-kicker">Videography</div>
+          <h2 class="section-title">Cinematic Wedding Films</h2>
+        </div>
+        <div class="section-subtitle">
+          Emotional, unobtrusive wedding films that feel like your day — not a staged production. We focus on atmosphere, sound and connection.
+        </div>
+      </div>
+
+      <div class="video-grid" aria-label="Wedding videography highlights">
+        <div class="video-card">
+          <iframe src="https://www.youtube.com/embed/RJIrGX7Kr4U" title="Wedding film by Nadtochiy Photography"></iframe>
+          <div class="video-caption">Highlight wedding film by Nadtochiy Photography</div>
+        </div>
+        <div class="video-card">
+          <iframe src="https://www.youtube.com/embed/-htsYo1b0TY" title="Wedding videography highlight"></iframe>
+          <div class="video-caption">Cinematic wedding day moments</div>
+        </div>
+        <div class="video-card">
+          <iframe src="https://www.youtube.com/embed/PPq2y43oAO8" title="Toronto wedding video"></iframe>
+          <div class="video-caption">Toronto &amp; Ontario wedding film</div>
+        </div>
+        <div class="video-card">
+          <iframe src="https://www.youtube.com/embed/GrKYVZCsv4k" title="Destination wedding film"></iframe>
+          <div class="video-caption">Destination wedding storytelling</div>
+        </div>
+        <div class="video-card">
+          <iframe src="https://www.youtube.com/embed/OsGyDql5hoM" title="Emotional wedding highlights"></iframe>
+          <div class="video-caption">Emotional cinematic highlights</div>
+        </div>
+        <div class="video-card">
+          <iframe src="https://www.youtube.com/embed/ZIsykEOGMuM" title="Fine art wedding videography"></iframe>
+          <div class="video-caption">Fine art wedding videography</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="section-header">
+        <div>
+          <div class="section-kicker">Investment</div>
+          <h2 class="section-title">Wedding Photography &amp; Videography Collections</h2>
+        </div>
+        <div class="section-subtitle">
+          Simple, transparent collections with full-day storytelling coverage. Photo and video can be booked together or separately, with the same team and cohesive style.
+        </div>
+      </div>
+
+      <div class="packages-grid" aria-label="Wedding photography packages">
+        <article class="package-card">
+          <div class="package-tag">Wedding Photography</div>
+          <div class="package-name">6 Hours</div>
+          <div class="package-price">$3999 CAD</div>
+          <div class="package-meta">A heartfelt glimpse into your day.</div>
+          <ul class="package-list">
+            <li>6 hours of photography</li>
+            <li>All photos fully edited (colour + retouching)</li>
+            <li>Online gallery</li>
+            <li>3 years of secure storage</li>
+          </ul>
+        </article>
+
+        <article class="package-card">
+          <div class="package-tag">Wedding Photography</div>
+          <div class="package-name">8 Hours</div>
+          <div class="package-price">$4499 CAD</div>
+          <div class="package-meta">From getting ready to golden hour.</div>
+          <ul class="package-list">
+            <li>8 hours of photography</li>
+            <li>All photos fully edited</li>
+            <li>Aerial photography included</li>
+            <li>Online gallery &amp; 3 years storage</li>
+          </ul>
+        </article>
+
+        <article class="package-card">
+          <div class="package-tag">Wedding Photography</div>
+          <div class="package-name">10 Hours</div>
+          <div class="package-price">$4999 CAD</div>
+          <div class="package-meta">The full story, from first look to final song.</div>
+          <ul class="package-list">
+            <li>10 hours of photography</li>
+            <li>All photos fully edited</li>
+            <li>Aerial photography</li>
+            <li>Online gallery &amp; 3 years storage</li>
+            <li>1‑hour engagement session included</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="packages-grid" style="margin-top:16px;" aria-label="Wedding videography packages">
+        <article class="package-card">
+          <div class="package-tag">Wedding Videography</div>
+          <div class="package-name">6 Hours</div>
+          <div class="package-price">$4499 CAD</div>
+          <div class="package-meta">The atmosphere, the energy, the feeling.</div>
+          <ul class="package-list">
+            <li>6 hours of videography</li>
+            <li>3–5 minute highlight film</li>
+            <li>Music + colour correction</li>
+            <li>Aerial videography</li>
+            <li>3 years storage</li>
+          </ul>
+        </article>
+
+        <article class="package-card">
+          <div class="package-tag">Wedding Videography</div>
+          <div class="package-name">8 Hours</div>
+          <div class="package-price">$5499 CAD</div>
+          <div class="package-meta">A full, moving portrait of your day.</div>
+          <ul class="package-list">
+            <li>8 hours of videography</li>
+            <li>3–5 minute highlight film</li>
+            <li>Music + colour correction</li>
+            <li>Aerial videography</li>
+            <li>3 years storage</li>
+          </ul>
+        </article>
+
+        <article class="package-card">
+          <div class="package-tag">Wedding Videography</div>
+          <div class="package-name">10 Hours</div>
+          <div class="package-price">$6499 CAD</div>
+          <div class="package-meta">A keepsake you will replay for years.</div>
+          <ul class="package-list">
+            <li>10 hours of videography</li>
+            <li>3–5 minute highlight film</li>
+            <li>Music + colour correction</li>
+            <li>Aerial videography</li>
+            <li>3 years storage</li>
+          </ul>
+        </article>
+      </div>
+
+      <ul class="note-list">
+        <li>All prices in CAD (HST not included).</li>
+        <li>Photo and video can be booked on the same date with our team.</li>
+        <li>Extra hour: $650 photo / $750 video.</li>
+        <li>Second photographer: $100 per hour. Second videographer: $150 per hour.</li>
+        <li>Mini film (7–15 min): +$1000 · Full wedding film (30+ min): +$2000.</li>
+        <li>Delivery via Dropbox with 3 years of storage; video can also be uploaded to YouTube.</li>
+        <li>Aerial services depend on weather and venue restrictions.</li>
+        <li>Save 10% on video when booked together with photography.</li>
+      </ul>
+    </section>
+
+    <section id="reviews" class="section">
+      <div class="section-header">
+        <div>
+          <div class="section-kicker">Reviews</div>
+          <h2 class="section-title">Kind Words from Our Couples</h2>
+        </div>
+        <div class="section-subtitle">
+          A few stories from couples and families who trusted us with their most important days — all reviews are published on Google.
+        </div>
+      </div>
+
+      <div class="reviews-grid" aria-label="Client reviews">
+        <article class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <div class="review-body">
+            Alexandra will be my photographer for every milestone in my life from now on. Her style is clean, elegant and timeless, and she made me feel beautiful and at ease even though I had just given birth and felt very insecure.
+          </div>
+          <div class="review-author">RC</div>
+          <div class="review-source"><a href="https://share.google/JAKSUeJZe32rdwdjS" target="_blank" rel="noopener">Google Review</a></div>
+        </article>
+
+        <article class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <div class="review-body">
+            Hiring Alexandra for our wedding was the best decision we made. I instantly trusted her 100% and she made the whole experience calm and pleasant. When we received our photos, they exceeded all expectations.
+          </div>
+          <div class="review-author">Andrea Wolff</div>
+          <div class="review-source"><a href="https://share.google/JAKSUeJZe32rdwdjS" target="_blank" rel="noopener">Google Review</a></div>
+        </article>
+
+        <article class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <div class="review-body">
+            Our engagement photos are our favourite ones ever taken. Alexandra has an incredible eye and captured all the special moments perfectly. We felt comfortable from the very beginning and received countless compliments on the photos.
+          </div>
+          <div class="review-author">Miranda Anthistle</div>
+          <div class="review-source"><a href="https://share.google/JAKSUeJZe32rdwdjS" target="_blank" rel="noopener">Google Review</a></div>
+        </article>
+
+        <article class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <div class="review-body">
+            We got married in Montenegro and hired Alexandra as our photographer. She was professional, friendly and supportive, capturing every moment beautifully — from the big scenes to emotional candid moments. Our family was amazed by the images.
+          </div>
+          <div class="review-author">Ben Agyei</div>
+          <div class="review-source"><a href="https://share.google/JAKSUeJZe32rdwdjS" target="_blank" rel="noopener">Google Review</a></div>
+        </article>
+
+        <article class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <div class="review-body">
+            Vladimir photographed our wedding in Montenegro and exceeded every expectation. He was proactive, inspired us during the shoot and even stayed longer than planned to create the perfect images and drone footage.
+          </div>
+          <div class="review-author">Evgen Kudriashov</div>
+          <div class="review-source"><a href="https://share.google/JAKSUeJZe32rdwdjS" target="_blank" rel="noopener">Google Review</a></div>
+        </article>
+
+        <article class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <div class="review-body">
+            Alexandra and Vladimir are what we call “invisible photographers” — always present, capturing every important moment, yet never intrusive. The film and photos were far beyond anything we imagined.
+          </div>
+          <div class="review-author">Katya Istratova</div>
+          <div class="review-source"><a href="https://share.google/JAKSUeJZe32rdwdjS" target="_blank" rel="noopener">Google Review</a></div>
+        </article>
+
+        <article class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <div class="review-body">
+            Alexandra and Vladimir are the best wedding photographers in the world — all of our guests said the same. They captured genuine, candid and personalized moments and were a joy to work with from start to finish.
+          </div>
+          <div class="review-author">Emily Chen</div>
+          <div class="review-source"><a href="https://share.google/JAKSUeJZe32rdwdjS" target="_blank" rel="noopener">Google Review</a></div>
+        </article>
+
+        <article class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <div class="review-body">
+            We had an amazing experience with Alexandra during our engagement shoot. She knew the best spots in Toronto, guided us naturally and captured our personalities beautifully in a timeless, romantic way.
+          </div>
+          <div class="review-author">Patricia Singson</div>
+          <div class="review-source"><a href="https://share.google/JAKSUeJZe32rdwdjS" target="_blank" rel="noopener">Google Review</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="faq" class="section">
+      <div class="section-header">
+        <div>
+          <div class="section-kicker">FAQ</div>
+          <h2 class="section-title">Questions We Hear Most Often</h2>
+        </div>
+        <div class="section-subtitle">
+          A short overview of how we work. For full details and custom quotes, send us a note and tell us about your day.
+        </div>
+      </div>
+
+      <div class="faq-grid">
+        <div>
+          <div class="faq-item">
+            <div class="faq-q">How many photos will we receive?</div>
+            <div class="faq-a">
+              We do not put a hard limit on the number of photos. We edit everything we shoot, so for a full wedding day you can expect around 700–1,000 fully edited images, depending on the length of coverage and your timeline.
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q">When will we receive our gallery?</div>
+            <div class="faq-a">
+              Wedding galleries are usually delivered within 3–4 months. We carefully select and edit every image, making sure the final story feels complete, cohesive and beautifully finished.
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q">Do you work outside Toronto?</div>
+            <div class="faq-a">
+              Yes. We regularly photograph and film weddings across the GTA, in Niagara, Muskoka and throughout Ontario. For more distant locations we often arrive the day before to avoid any travel issues and to scout the venue in advance.
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q">Do you travel for destination weddings?</div>
+            <div class="faq-a">
+              Absolutely. Thanks to our years in Montenegro we have extensive destination experience in coastal and historic locations. We frequently travel for weddings in Europe and North America and adapt quickly to new venues and light.
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="faq-item">
+            <div class="faq-q">How do you approach posing?</div>
+            <div class="faq-a">
+              Most of the day we work in a documentary way, observing and capturing things as they naturally happen. During couple portraits and group photos we gently guide you into flattering light and composition while keeping the mood relaxed and authentic.
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q">Do you deliver RAW files?</div>
+            <div class="faq-a">
+              No. We deliver carefully edited high‑resolution JPEG images that reflect our style and the story of your day. The editing process is a core part of our work and we want you to enjoy a polished final result.
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q">Do you shoot on film?</div>
+            <div class="faq-a">
+              Yes, we can include 35mm and/or medium format film in your coverage. Film adds a soft, timeless texture and colour palette that many of our couples love.
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q">How do we book you?</div>
+            <div class="faq-a">
+              Send us an inquiry through the form on our website or contact us directly by email, WhatsApp or Telegram. We will reply with availability, schedule a call and send a proposal with a contract and payment details. A 30% retainer secures your date.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="section-header">
+        <div>
+          <div class="section-kicker">Contact</div>
+          <h2 class="section-title">Let’s Talk About Your Day</h2>
+        </div>
+        <div class="section-subtitle">
+          Tell us about your wedding plans, your venue and what matters most to you. We will reply with availability, a custom recommendation and next steps.
+        </div>
+      </div>
+
+      <div class="contact-grid">
+        <div>
+          <ul class="contact-list">
+            <li><strong>Email:</strong> <a href="mailto:info@nadtochiy.com">info@nadtochiy.com</a></li>
+            <li><strong>Phone / WhatsApp:</strong> <a href="https://wa.me/14376035843" target="_blank" rel="noopener">+1 437 603 5843</a></li>
+            <li><strong>Telegram:</strong> <a href="https://t.me/nadtochiy_com" target="_blank" rel="noopener">@nadtochiy_com</a></li>
+            <li><strong>Location:</strong> 4978 Yonge Street, North York, Toronto, Ontario, M2N 7G8, Canada</li>
+            <li><strong>Languages:</strong> English, Ukrainian, Russian, Serbian, French, Croatian</li>
+          </ul>
+          <p class="section-body" style="margin-top:10px;">
+            For detailed pricing, availability and full galleries, please use the inquiry form on our main website:
+            <a href="https://nadtochiy.com/inquire" target="_blank" rel="noopener">nadtochiy.com/inquire</a>.
+          </p>
+        </div>
+        <div>
+          <div class="subcard">
+            <div class="subcard-title">Find us online</div>
+            <div class="social-row">
+              <a class="social-pill" href="https://www.instagram.com/nadtochiy_photography" target="_blank" rel="noopener">Instagram</a>
+              <a class="social-pill" href="https://www.youtube.com/@nadtochiy" target="_blank" rel="noopener">YouTube</a>
+              <a class="social-pill" href="https://www.tiktok.com/@toronto_wedding" target="_blank" rel="noopener">TikTok</a>
+              <a class="social-pill" href="https://ca.pinterest.com/nadtochiy" target="_blank" rel="noopener">Pinterest</a>
+              <a class="social-pill" href="https://x.com/nadtochiy_photo" target="_blank" rel="noopener">X (Twitter)</a>
+              <a class="social-pill" href="https://www.facebook.com/NadtochiyTorontoWeddingPhotography" target="_blank" rel="noopener">Facebook</a>
+              <a class="social-pill" href="https://www.linkedin.com/company/nadtochiy-photography" target="_blank" rel="noopener">LinkedIn Page</a>
+              <a class="social-pill" href="https://www.linkedin.com/in/nadtochiy-photography" target="_blank" rel="noopener">LinkedIn Profile</a>
+            </div>
+            <p style="margin-top:12px; font-size:0.84rem; color:var(--text-muted);">
+              Main website:&nbsp;<a href="https://nadtochiy.com" target="_blank" rel="noopener">nadtochiy.com</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-note">
+    Nadtochiy Photography — Toronto Wedding Photographer &amp; Videographer · Serving Toronto, GTA, Niagara, Muskoka, all of Ontario and destination weddings worldwide.
+  </footer>
+</body>
+</html>
